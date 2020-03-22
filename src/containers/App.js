@@ -14,15 +14,25 @@ function App() {
     const apiData = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=${API_KEY}`)
     .then( res => res.json())
     .then(data => data)
-
-    setWeather({
-      data: apiData,
-      city: apiData.city,
-      country: apiData.sys.country,
-      description: apiData.weather[0].description,
-      temperature: apiData.main.temp,
-      error:""
-    })
+    if(city && country) {
+      setWeather({
+        data: apiData,
+        city: apiData.city,
+        country: apiData.sys.country,
+        description: apiData.weather[0].description,
+        temperature: apiData.main.temp,
+        error:""
+      }
+      )} else {
+      setWeather({
+        data: '',
+        city: '',
+        country: '',
+        description: '',
+        temperature: '',
+        error:"Please enter a city and country"
+      })
+    }
   }
 
   return (
