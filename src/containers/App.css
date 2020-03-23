@@ -1,5 +1,46 @@
 .App {
+  height: 100vh;
   text-align: center;
+  background: rgba(118, 157, 149, 0.7);
+}
+
+header {
+  width: 100vw;
+  height: auto;
+  background-color: whitesmoke;
+  box-shadow: 0 6px 10px 0 rgba(4, 32, 70, 0.2);
+  padding: .5rem 0;
+  margin-bottom: 2rem;
+}
+
+header img {
+  display: block;
+  margin: 0 auto;
+  width: 35%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  font-size: .9rem;
+  width: 15rem;
+  margin: auto;
+  margin-bottom: .5rem;
+  padding: .1rem;
+}
+
+button {
+  margin-top: .5rem;
+  width: 10rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: rgb(21, 91, 125);
+  color: whitesmoke;
+  font-size: 1rem;
 }
 
 .App-logo {
