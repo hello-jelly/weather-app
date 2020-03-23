@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Weather = ({description, city, country, error, temperature}) => {
+  
   function matchValues () {
     if(description) {
     const weatherDescription = description.split(' ')
