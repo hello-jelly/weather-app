@@ -35,12 +35,13 @@ input {
 
 button {
   margin-top: .5rem;
-  width: 10rem;
+  width: auto;
   text-transform: uppercase;
   font-weight: 700;
   background: rgb(21, 91, 125);
   color: whitesmoke;
-  font-size: 1rem;
+  font-size: .9rem;
+  padding: .25rem .6rem;
 }
 
 .App-logo {
